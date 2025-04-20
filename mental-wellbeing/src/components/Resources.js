@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../css/Home.css';
 function Resources() {
   return (
     <section className="resources">

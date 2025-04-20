@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../css/Login.css'; 
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate(); // 👈 Ajout ici
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Email:', email);
         console.log('Password:', password);
+
+        // 👉 Redirige après soumission
+        navigate('/acceuil');
     };
 
     return (
         <div className="login-container">
-            
             <form onSubmit={handleSubmit} className="login-form">
-            <h3>Login</h3>
-            <h5>Don't have an account? <Link to="/Sign">Sign up</Link></h5>
+                <h3>Login</h3>
+                <h5>Don't have an account? <Link to="/Sign">Sign up</Link></h5>
                 <div className="form-group">
                     <label htmlFor="email">Email:</label>
                     <input
@@ -39,17 +43,12 @@ const Login = () => {
                         className="input-field"
                     />
                 </div>
-                <button type="submit" className="submit-button">Login</button>
-                <p className="signup-link">
-                
-            </p>
+                <button type="submit" className="submit-button">
+                    Login
+                </button>
             </form>
-            
         </div>
     );
 };
 
 export default Login;
-
-
-

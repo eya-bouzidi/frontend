@@ -18,13 +18,17 @@ import Testimonials from './Testimonials';
   return (
     <div>
       <Header />
-      <CTA />
-       <Hero /><Hero /><Hero /><Hero /><Hero /><Hero /><Hero />
+      <div className="mycontainer">
+      <Hero />
+       {/* <Hero /><Hero /><Hero /><Hero /><Hero /><Hero /><Hero /> */}
        <RelaxationIntro />
       <Resources />
       <DailyPractice />
       <Testimonials />
       <CTA />
+
+      </div>
+      
        <Footer />
     </div>
   );
