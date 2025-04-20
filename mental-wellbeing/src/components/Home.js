@@ -17,9 +17,7 @@ import Testimonials from './Testimonials';
     <div>
       <Header />
       <div className="mycontainer">
-      <CTA />
       <Hero />
-       
        <RelaxationIntro />
       <Resources />
       <DailyPractice />

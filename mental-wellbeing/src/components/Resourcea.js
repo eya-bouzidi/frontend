@@ -3,11 +3,7 @@ import Footer from './Footer';
 import '../css/Home.css'; 
 import Resources from './Resources';
 import { Link } from 'react-router-dom';
-
-
   function Resourcea() {
-
-   
   return (
     <div>
       <header className="header">

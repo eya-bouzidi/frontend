@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import '../css/Acceuil.css';
 import '../css/Home.css';
 import Footer from './Footer';
-import CTA from './CTA';
 const Acceuil = () => {
   return (
     <div className="acceuil">
@@ -26,7 +25,6 @@ const Acceuil = () => {
 
       <main>
         <section className="hero">
-        <CTA />
           <div className="hero-content">
             <h1>Bienvenue sur Mental Health</h1>
             <p>

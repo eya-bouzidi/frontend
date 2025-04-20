@@ -6,7 +6,7 @@ import  Home from './components/Home';
 import Acceuil from './components/Acceuil';
 import Resources from './components/Resources';
 import Resourcea from './components/Resourcea';
-
+import Test from './components/Test';
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
                <Route path="/acceuil" element={<Acceuil />} />
              <Route path="/resources" element={<Resourcea />} />
               <Route path="/resouce" element={<Resources />} />
+              <Route path="/test" element={<Test />} />
                    </Routes>
       </div>
     </Router>
