@@ -1,6 +1,7 @@
-/* acceuil.css */
 
-.resources-preview {
+  /* acceuil.css */
+
+  .resources-preview {
     background-color: #fff;
     padding: 80px 20px;
     text-align: center;
@@ -11,11 +12,9 @@
     color: #5a9bc0;
     margin-bottom: 20px;
   }
-  
   .resources-preview p {
-    max-width: 700px;
+    max-width: 1100px;
     margin: 0 auto 30px;
     color: #666;
     font-size: 1.1rem;
   }
-  

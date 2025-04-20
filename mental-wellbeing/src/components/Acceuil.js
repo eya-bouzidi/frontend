@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import '../css/Acceuil.css';
 import '../css/Home.css';
 import Footer from './Footer';
-import Resources from './Resources';
-
+import CTA from './CTA';
 const Acceuil = () => {
   return (
     <div className="acceuil">
@@ -17,8 +16,8 @@ const Acceuil = () => {
           <nav>
             <ul className="nav-links">
               <li><Link to="/acceuil" className="active">Home</Link></li>
-              <li><Link to="/test">Test</Link></li>
-              <li><Link to="/resouce" >Resources</Link></li>
+              <li><Link to="/test" >Test</Link></li>
+              <li><Link to="/resources"  >Resources</Link></li>
               <li><Link to="/">Exit</Link></li>
             </ul>
           </nav>
@@ -27,11 +26,12 @@ const Acceuil = () => {
 
       <main>
         <section className="hero">
+        <CTA />
           <div className="hero-content">
             <h1>Bienvenue sur Mental Health</h1>
             <p>
-              Votre bien-être mental est notre priorité. Explorez nos tests et ressources
-              pour mieux vous connaître et prendre soin de vous.
+            Your mental well-being is our priority.
+             Explore our tests and resources to get to know you better and take care of yourself.
             </p>
             <Link to="/test" className="btn btn-primary">Passer un Test</Link>
           </div>
@@ -41,9 +41,9 @@ const Acceuil = () => {
           <div className="container">
             <h2>Découvrez nos ressources</h2>
             <p>
-              Nous vous proposons une sélection de ressources pratiques : méditation guidée,
-              exercices de respiration, sons relaxants, et plus encore.
-              Ces outils sont conçus pour vous accompagner au quotidien.
+            Discover a wide range of practical mental health resources, including guided meditations, 
+            breathing exercises, relaxing sounds, and expert tips. 
+            These tools are designed to help you manage stress, improve focus, and enhance your emotional well-being.
             </p>
             <Link to="/resources" className="btn btn-secondary">Voir les Ressources</Link>
           </div>

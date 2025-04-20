@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Footer from './Footer';
 import '../css/Home.css'; 
 import Header from './Header';
@@ -12,15 +12,14 @@ import Testimonials from './Testimonials';
 
   function Home() {
 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+    
   return (
     <div>
       <Header />
       <div className="mycontainer">
+      <CTA />
       <Hero />
-       {/* <Hero /><Hero /><Hero /><Hero /><Hero /><Hero /><Hero /> */}
+       
        <RelaxationIntro />
       <Resources />
       <DailyPractice />

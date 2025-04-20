@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import  Home from './components/Home';
 import Acceuil from './components/Acceuil';
 import Resources from './components/Resources';
-
+import Resourcea from './components/Resourcea';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
              <Route path="/login" element={<Login />} />
              <Route path="/sign" element={<Sign />}/> 
                <Route path="/acceuil" element={<Acceuil />} />
+             <Route path="/resources" element={<Resourcea />} />
               <Route path="/resouce" element={<Resources />} />
                    </Routes>
       </div>
